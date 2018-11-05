@@ -1,0 +1,17 @@
+<!-- home.erb > Challenge 6.1 -->
+<!-- Replace static text with Ruby tags -->
+  <img src="<%= book.image_path %>" alt="<%= book.title %> cover image">
+
+  <div class="book-details">
+    <h2><%= book.title %></h2>
+    <h3><%= book.authors.join(", ") %></h3>
+
+    <div class="book-info">
+      <p><%= book.description %></p>
+      <ul>
+        <li>Publisher: <strong><%= book.publisher %></strong></li>
+        <li>Published on: <strong><%= book.publish_date %></strong></li>
+        <li>ISBN: <strong><%= book.isbn %></strong></li>
+      </ul>
+    </div>
+  </div>
